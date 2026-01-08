@@ -1,0 +1,23 @@
+
+{
+  "short_name": "ReliefNet",
+  "name": "ReliefNet Disaster Relief",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/ai-gen-images/reliefnet-assets/main/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/ai-gen-images/reliefnet-assets/main/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1e3a8a",
+  "background_color": "#ffffff"
+}

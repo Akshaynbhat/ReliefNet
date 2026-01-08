@@ -1,0 +1,57 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Helper Functions ---
+    
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+    
+    function isAdmin() {
+      return isSignedIn() && 
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // --- Collection Rules ---
+
+    // 1. Users: Only you can edit your own profile. Admins can edit all.
+    match /users/{userId} {
+      allow read, write: if isOwner(userId) || isAdmin();
+    }
+
+    // 2. Reports: Everyone can READ. Only logged in users can CREATE.
+    match /reports/{reportId} {
+      allow read: if true;
+      allow create: if isSignedIn();
+      allow update, delete: if isOwner(resource.data.userId) || isAdmin();
+    }
+
+    // 3. Donations: Private. Only you see your own donations.
+    match /donations/{donationId} {
+      allow read: if (isSignedIn() && resource.data.userId == request.auth.uid) || isAdmin();
+      allow create: if isSignedIn();
+      allow update: if isAdmin();
+    }
+
+    // 4. Mail (Trigger Email Extension):
+    match /mail/{mailId} {
+      // Allow anyone to create (your app already controls who can write)
+      allow create: if true;
+
+      // Allow the extension to update status fields
+      allow update: if true;
+
+      // Optional: prevent deletes from clients
+      allow delete: if isAdmin();
+
+      // Optional: restrict reads
+      allow read: if isAdmin();
+    }
+  }
+}

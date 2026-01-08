@@ -1,0 +1,9 @@
+{
+  "name": "semifinal Copy of ReliefNet",
+  "description": "A modern disaster reporting and donation tracking platform featuring a Gemini-powered AI assistant.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera",
+    "microphone"
+  ]
+}
