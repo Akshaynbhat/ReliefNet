@@ -1,7 +1,7 @@
 # 🌍 ReliefNet – Crowdsourced Disaster Relief & Donation Platform
 
 ReliefNett is a web-based platform designed to **crowdsource real-time disaster reporting** and provide **transparent, verified donation channels**.  
-It aims to reduce misinformation during emergencies and build trust in disaster relief contributions.
+It enables faster verification, better coordination, and accountable distribution of relief resources, helping authorities, volunteers, and donors respond with greater speed and confidence during emergencies.
 
 ---
 
