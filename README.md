@@ -142,3 +142,11 @@ ReliefNett/
 ```bash
 npm install
 npm run dev
+
+## Translation Feature
+
+The translation feature is disabled in the public version of this project
+to avoid exposing paid API keys.
+
+It can be re-enabled in private deployments using a secure backend proxy.
+
