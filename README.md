@@ -78,7 +78,8 @@ ReliefNett solves this problem by:
 ### Admin Dashboard
 <img width="1897" height="908" alt="admin_dashboard" src="https://github.com/user-attachments/assets/e0378ccf-08eb-426e-980a-abc0c7d3436a" />
 <img width="1897" height="905" a<img width="1882" height="893" alt="admin_dashboard3" src="https://github.com/user-attachments/assets/14067fa5-7c80-4e9b-909e-4d2700e64768" />
-lt="admin_dashboard2" src="https://github.com/user-attachments/assets/651af112-097b-44ee-bcf6-76c42a909fb5" />
+<img width="1882" height="893" alt="admin_dashboard3" src="https://github.com/user-attachments/assets/3ded0119-6dfd-4c88-8276-c9b2ef957f09" />
+
 
 
 ### Donations & Transparency
