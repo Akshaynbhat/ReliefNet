@@ -84,6 +84,7 @@ ReliefNett solves this problem by:
 
 ### Donations & Transparency
 <img width="1901" height="900" alt="donations" src="https://github.com/user-attachments/assets/2289d939-f73f-4499-a517-e5d3fdec6dae" />
+
 Track Donation Status<img width="1896" height="913" alt="track_donation" src="https://github.com/user-attachments/assets/6f9e3cdd-934b-45c5-95b9-354cd29fc440" />
 
 
